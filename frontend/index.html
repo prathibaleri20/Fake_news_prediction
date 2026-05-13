@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection AI</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <header class="header">
+                <h1>Fact Flow</h1>
+                <p>Advanced Neural Fake News Detection System</p>
+            </header>
+
+            <div class="input-section">
+                <textarea id="newsText"
+                    placeholder="Paste the news article or headline here to verify its authenticity..."></textarea>
+                <button id="analyzeBtn" class="analyze-btn">
+                    <span id="btnText">Verify Authenticity</span>
+                    <div id="spinner" class="spinner hidden"></div>
+                </button>
+            </div>
+
+            <div id="errorMessage" class="error-message hidden"></div>
+
+            <div id="resultContainer" class="result-container hidden">
+                <h2 id="resultTitle" class="result-title"></h2>
+                <div class="confidence-bar">
+                    <div id="confidenceFill" class="confidence-fill"></div>
+                </div>
+                <p id="confidenceText" class="confidence-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

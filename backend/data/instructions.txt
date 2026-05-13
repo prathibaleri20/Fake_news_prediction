@@ -1,0 +1,8 @@
+Instructions for Dataset:
+
+Due to Kaggle authentication requirements, the automated system uses a small sample dataset to verify everything works out-of-the-box. 
+
+To use the actual Kaggle Fake News dataset:
+1. Download `train.csv` from Kaggle (e.g., https://www.kaggle.com/c/fake-news/data)
+2. Place the `train.csv` file in this `backend/data` directory.
+3. The training script will automatically use it the next time you run `python ml/train_model.py`.
